@@ -9,7 +9,15 @@ neat subfolders — and logs every move with a timestamp.
 
 ---
 
-## 📸 Demo
+## 📸 Before & After
+
+**Before** — all files dumped in one place, impossible to find anything:
+
+![Before](images/before.png)
+
+**After** — automatically sorted into neat subfolders in seconds:
+
+![After](images/after.png)
 
 ![Demo Screenshot](images/demo.png)
 
