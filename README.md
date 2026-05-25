@@ -1,44 +1,84 @@
-# Automated File Organizer
+# 🗂️ Automated File Organizer
 
-A simple Python script that automatically sorts files in any folder into subfolders by type — and logs every move with a timestamp.
+A simple Python script that automatically sorts messy folders into
+neat subfolders — and logs every move with a timestamp.
 
-## What it does
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+![Status](https://img.shields.io/badge/Status-Working-brightgreen?style=flat)
 
-Drops your messy folder files into neat subfolders:
+---
 
-```
+## 📸 Demo
+
+![Demo Screenshot](images/demo.png)
+
+---
+
+## 📁 What it does
+
+Takes a messy folder like this:
 Downloads/
-  Images/      ← .jpg .png .gif
-  PDFs/        ← .pdf
-  Documents/   ← .doc .docx .txt
-  Videos/      ← .mp4 .mov
-  Audio/       ← .mp3 .wav
-  Archives/    ← .zip .rar
-  Others/      ← everything else
-  organizer.log  ← record of every move
-```
+holiday.jpg
+invoice.pdf
+notes.txt
+song.mp3
 
-## How to use
+And turns it into this automatically:
+Downloads/
+Images/       ← holiday.jpg
+PDFs/         ← invoice.pdf
+Documents/    ← notes.txt
+Audio/        ← song.mp3
+organizer.log ← record of every move
+---
+
+## 🚀 How to use
 
 ```bash
-# Organize a specific folder
+# Organize your Downloads folder (Windows)
 python organizer.py C:/Users/YourName/Downloads
 
+# Organize your Downloads folder (Mac/Linux)
+python organizer.py ~/Downloads
+
 # Organize the current folder
-python organizer.py
+python organizer.py .
 ```
 
-## Requirements
+---
+
+## 📋 Log output example
+2024-06-01 14:22:01  |  Starting to organize: C:/Users/You/Downloads
+2024-06-01 14:22:01  |  MOVED  holiday.jpg   -->  Images/
+2024-06-01 14:22:01  |  MOVED  invoice.pdf   -->  PDFs/
+2024-06-01 14:22:01  |  MOVED  notes.txt     -->  Documents/
+2024-06-01 14:22:01  |  MOVED  song.mp3      -->  Audio/
+2024-06-01 14:22:01  |  Done! 4 file(s) organized.
+
+---
+
+## 🗂️ File categories supported
+
+| Folder | Extensions |
+|---|---|
+| Images | .jpg .jpeg .png .gif .bmp .webp .svg |
+| PDFs | .pdf |
+| Documents | .doc .docx .txt .md .odt .rtf |
+| Videos | .mp4 .mov .avi .mkv |
+| Audio | .mp3 .wav .flac .aac |
+| Archives | .zip .rar .tar .gz |
+| Others | anything else |
+
+---
+
+## ⚙️ Requirements
 
 - Python 3.8 or newer
-- No extra packages needed — uses only built-in Python libraries
+- No extra packages needed — uses only built-in Python
 
-## Sample log output
+---
 
-```
-2024-06-01 14:22:01  |  Starting to organize: C:/Users/You/Downloads
-2024-06-01 14:22:01  |  MOVED  holiday.jpg  -->  Images/
-2024-06-01 14:22:01  |  MOVED  invoice.pdf  -->  PDFs/
-2024-06-01 14:22:01  |  MOVED  notes.txt    -->  Documents/
-2024-06-01 14:22:01  |  Done! 3 file(s) organized.
-```
+## 👤 Author
+
+Made by Sonali Deshmukh 
